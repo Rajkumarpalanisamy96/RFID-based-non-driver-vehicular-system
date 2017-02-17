@@ -1,5 +1,4 @@
-//Program by Jeremy Blum
-//www.jeremyblum.com
+
 //Controls a Servo Motor
 
 //Include Servo Library
@@ -9,13 +8,13 @@
 int servoPin = 9;
 
 //Create Servo Object
-Servo jeremysServo;
+Servo Servo;
 
 void setup()
 {
  
   //Attaches the Servo to our object
-  jeremysServo.attach(servoPin);
+  Servo.attach(servoPin);
 }
 
 void loop()
@@ -24,7 +23,7 @@ void loop()
   //We can Turn a Servo to 180 degrees
   for (int i = 0; i <=180; i=i+20)
   {
-    jeremysServo.write(i);
+    Servo.write(i);
     delay(1000);
   }
   
