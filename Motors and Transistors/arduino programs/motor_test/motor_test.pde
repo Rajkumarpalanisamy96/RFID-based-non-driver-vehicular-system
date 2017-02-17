@@ -1,5 +1,4 @@
-//Program by Jeremy Blum
-//www.jeremyblum.com
+
 //Test Motor Speed Using a Transistor
 
 //Define Pins
