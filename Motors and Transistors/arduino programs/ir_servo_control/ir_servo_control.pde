@@ -1,5 +1,4 @@
-//Program by Jeremy Blum
-//www.jeremyblum.com
+
 //Controls a Servo Motor using the info from an IR Distance Sensor
 
 //Include Servo Library
@@ -10,13 +9,13 @@ int servoPin = 9;
 int distPin = 0;
 
 //Create Servo Object
-Servo jeremysServo;
+Servo Servo;
 
 void setup()
 {
  
   //Attaches the Servo to our object
-  jeremysServo.attach(servoPin);
+  ervo.attach(servoPin);
 }
 
 void loop()
@@ -26,6 +25,6 @@ void loop()
   int pos = map(dist, 0, 1023, 0, 180);
   
   //Turn the servo
-  jeremysServo.write(pos);
+  Servo.write(pos);
   
 }
